@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savoria - Fine Dining Experience</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts - Distinctive Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Savoria</span>
+                <span class="logo-subtitle">Fine Dining</span>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#chef" class="nav-link">Chef</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge animate-slide-up">Est. 2018</div>
+                <h1 class="hero-title animate-slide-up">
+                    Where Every Meal<br>
+                    Becomes a <span class="gradient-text">Memory</span>
+                </h1>
+                <p class="hero-tagline animate-slide-up">
+                    Experience culinary excellence crafted with passion, served with elegance, 
+                    and enjoyed in an atmosphere of refined warmth.
+                </p>
+                <div class="hero-buttons animate-slide-up">
+                    <a href="#contact" class="btn btn-primary">Reserve a Table</a>
+                    <a href="#menu" class="btn btn-secondary">Explore Menu</a>
+                </div>
+            </div>
+            
+            <div class="hero-image animate-fade-in">
+                <!-- EASY TO CHANGE: Replace src attribute with your hero image -->
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80" 
+                     alt="Gourmet dish" 
+                     class="food-hero-img">
+                <div class="hero-image-decoration"></div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse"></div>
+        </div>
+    </section>
+
+    <!-- Popular Dishes Section -->
+    <section class="dishes" id="menu">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Our Signature</span>
+                <h2 class="section-title">Popular Dishes</h2>
+                <p class="section-description">
+                    Handpicked selections from our menu, crafted daily with the finest ingredients
+                </p>
+            </div>
+            
+            <div class="dishes-grid">
+                <!-- Dish Card 1 - EASY TO CHANGE -->
+                <div class="dish-card" data-aos="fade-up">
+                    <div class="dish-image-wrapper">
+                        <!-- Change src for different dish image -->
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80" 
+                             alt="Fresh Garden Salad" 
+                             class="dish-image">
+                        <div class="dish-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="dish-content">
+                        <div class="dish-header">
+                            <!-- Change dish name here -->
+                            <h3 class="dish-name">Mediterranean Harvest</h3>
+                            <!-- Change price here -->
+                            <span class="dish-price">$24</span>
+                        </div>
+                        <!-- Change description here -->
+                        <p class="dish-description">
+                            Fresh seasonal greens, heirloom tomatoes, Kalamata olives, and feta cheese
+                        </p>
+                        <div class="dish-tags">
+                            <span class="tag">Vegetarian</span>
+                            <span class="tag">Fresh</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dish Card 2 - EASY TO CHANGE -->
+                <div class="dish-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="dish-image-wrapper">
+                        <!-- Change src for different dish image -->
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" 
+                             alt="Artisan Pizza" 
+                             class="dish-image">
+                        <div class="dish-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="dish-content">
+                        <div class="dish-header">
+                            <!-- Change dish name here -->
+                            <h3 class="dish-name">Truffle Margherita</h3>
+                            <!-- Change price here -->
+                            <span class="dish-price">$32</span>
+                        </div>
+                        <!-- Change description here -->
+                        <p class="dish-description">
+                            Hand-tossed dough, San Marzano tomatoes, buffalo mozzarella, fresh basil
+                        </p>
+                        <div class="dish-tags">
+                            <span class="tag">Popular</span>
+                            <span class="tag">Chef's Pick</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dish Card 3 - EASY TO CHANGE -->
+                <div class="dish-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="dish-image-wrapper">
+                        <!-- Change src for different dish image -->
+                        <img src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?w=600&q=80" 
+                             alt="Premium Steak" 
+                             class="dish-image">
+                        <div class="dish-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="dish-content">
+                        <div class="dish-header">
+                            <!-- Change dish name here -->
+                            <h3 class="dish-name">Wagyu Ribeye</h3>
+                            <!-- Change price here -->
+                            <span class="dish-price">$68</span>
+                        </div>
+                        <!-- Change description here -->
+                        <p class="dish-description">
+                            Premium grade A5 Wagyu, roasted vegetables, black garlic butter
+                        </p>
+                        <div class="dish-tags">
+                            <span class="tag">Premium</span>
+                            <span class="tag">Signature</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dish Card 4 - EASY TO CHANGE -->
+                <div class="dish-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="dish-image-wrapper">
+                        <!-- Change src for different dish image -->
+                        <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=600&q=80" 
+                             alt="Seafood Pasta" 
+                             class="dish-image">
+                        <div class="dish-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="dish-content">
+                        <div class="dish-header">
+                            <!-- Change dish name here -->
+                            <h3 class="dish-name">Ocean's Linguine</h3>
+                            <!-- Change price here -->
+                            <span class="dish-price">$42</span>
+                        </div>
+                        <!-- Change description here -->
+                        <p class="dish-description">
+                            Fresh lobster, scallops, mussels in white wine garlic sauce
+                        </p>
+                        <div class="dish-tags">
+                            <span class="tag">Seafood</span>
+                            <span class="tag">Popular</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dish Card 5 - EASY TO CHANGE -->
+                <div class="dish-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="dish-image-wrapper">
+                        <!-- Change src for different dish image -->
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&q=80" 
+                             alt="Dessert" 
+                             class="dish-image">
+                        <div class="dish-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="dish-content">
+                        <div class="dish-header">
+                            <!-- Change dish name here -->
+                            <h3 class="dish-name">Lavender Panna Cotta</h3>
+                            <!-- Change price here -->
+                            <span class="dish-price">$16</span>
+                        </div>
+                        <!-- Change description here -->
+                        <p class="dish-description">
+                            Silky Italian custard infused with lavender, berry compote
+                        </p>
+                        <div class="dish-tags">
+                            <span class="tag">Dessert</span>
+                            <span class="tag">House Made</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dish Card 6 - EASY TO CHANGE -->
+                <div class="dish-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="dish-image-wrapper">
+                        <!-- Change src for different dish image -->
+                        <img src="https://images.unsplash.com/photo-1562059390-a761a084768e?w=600&q=80" 
+                             alt="Burger" 
+                             class="dish-image">
+                        <div class="dish-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="dish-content">
+                        <div class="dish-header">
+                            <!-- Change dish name here -->
+                            <h3 class="dish-name">Signature Burger</h3>
+                            <!-- Change price here -->
+                            <span class="dish-price">$28</span>
+                        </div>
+                        <!-- Change description here -->
+                        <p class="dish-description">
+                            Grass-fed beef patty, aged cheddar, caramelized onions, truffle aioli
+                        </p>
+                        <div class="dish-tags">
+                            <span class="tag">Comfort Food</span>
+                            <span class="tag">Bestseller</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Restaurant Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-image" data-aos="fade-right">
+                <!-- EASY TO CHANGE: Replace src with your restaurant interior image -->
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80" 
+                     alt="Restaurant interior" 
+                     class="about-img">
+            </div>
+            
+            <div class="about-content" data-aos="fade-left">
+                <span class="section-badge">Our Story</span>
+                <h2 class="section-title">A Culinary Journey<br>Since 2018</h2>
+                <p class="about-text">
+                    Savoria was born from a simple belief: that food brings people together 
+                    in the most meaningful way. Founded by Chef Alessandro Romano, our restaurant 
+                    blends traditional cooking techniques with modern culinary innovation.
+                </p>
+                <p class="about-text">
+                    Every dish tells a story, every ingredient is carefully selected, and every 
+                    meal is crafted with passion. We source locally, cook seasonally, and serve 
+                    with genuine hospitality.
+                </p>
+                
+                <!-- Highlights -->
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🌿</div>
+                        <h4 class="highlight-title">Fresh Ingredients</h4>
+                        <p class="highlight-text">Sourced daily from local farms and markets</p>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-icon">⚡</div>
+                        <h4 class="highlight-title">Fast Service</h4>
+                        <p class="highlight-text">Quality meals prepared with efficiency</p>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-icon">👨‍🍳</div>
+                        <h4 class="highlight-title">Master Chefs</h4>
+                        <p class="highlight-text">Culinary experts with decades of experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef Section -->
+    <section class="chef" id="chef">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Meet the Team</span>
+                <h2 class="section-title">Our Master Chefs</h2>
+            </div>
+            
+            <div class="chef-grid">
+                <!-- Chef Card 1 - EASY TO CHANGE -->
+                <div class="chef-card" data-aos="zoom-in">
+                    <div class="chef-image-wrapper">
+                        <!-- Change src for different chef image -->
+                        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=500&q=80" 
+                             alt="Head Chef" 
+                             class="chef-image">
+                        <div class="chef-overlay">
+                            <div class="chef-social">
+                                <a href="#" class="social-link">Instagram</a>
+                                <a href="#" class="social-link">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chef-info">
+                        <!-- Change chef name here -->
+                        <h3 class="chef-name">Alessandro Romano</h3>
+                        <!-- Change chef role here -->
+                        <p class="chef-role">Head Chef & Founder</p>
+                        <p class="chef-bio">
+                            Trained in Michelin-starred kitchens across Italy and France, 
+                            Alessandro brings 25 years of culinary excellence to every plate.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Chef Card 2 - EASY TO CHANGE -->
+                <div class="chef-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="chef-image-wrapper">
+                        <!-- Change src for different chef image -->
+                        <img src="https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=500&q=80" 
+                             alt="Pastry Chef" 
+                             class="chef-image">
+                        <div class="chef-overlay">
+                            <div class="chef-social">
+                                <a href="#" class="social-link">Instagram</a>
+                                <a href="#" class="social-link">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chef-info">
+                        <!-- Change chef name here -->
+                        <h3 class="chef-name">Sophie Laurent</h3>
+                        <!-- Change chef role here -->
+                        <p class="chef-role">Pastry Chef</p>
+                        <p class="chef-bio">
+                            A graduate of Le Cordon Bleu Paris, Sophie creates exquisite 
+                            desserts that are as beautiful as they are delicious.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Chef Card 3 - EASY TO CHANGE -->
+                <div class="chef-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="chef-image-wrapper">
+                        <!-- Change src for different chef image -->
+                        <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?w=500&q=80" 
+                             alt="Sous Chef" 
+                             class="chef-image">
+                        <div class="chef-overlay">
+                            <div class="chef-social">
+                                <a href="#" class="social-link">Instagram</a>
+                                <a href="#" class="social-link">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chef-info">
+                        <!-- Change chef name here -->
+                        <h3 class="chef-name">Marcus Chen</h3>
+                        <!-- Change chef role here -->
+                        <p class="chef-role">Sous Chef</p>
+                        <p class="chef-bio">
+                            Specializing in Asian-fusion cuisine, Marcus brings creative 
+                            innovation and precision to our culinary team.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Visual Journey</span>
+                <h2 class="section-title">Food Gallery</h2>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Gallery Image 1 - EASY TO CHANGE -->
+                <div class="gallery-item" data-aos="zoom-in">
+                    <!-- Change src for different gallery image -->
+                    <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80" 
+                         alt="Gourmet dish presentation" 
+                         class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Seasonal Tasting Menu</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Image 2 - EASY TO CHANGE -->
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="50">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80" 
+                         alt="Breakfast spread" 
+                         class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Weekend Brunch</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Image 3 - EASY TO CHANGE -->
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&q=80" 
+                         alt="Appetizers" 
+                         class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Artisan Appetizers</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Image 4 - EASY TO CHANGE -->
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="150">
+                    <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&q=80" 
+                         alt="Fine dining" 
+                         class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Chef's Special</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Image 5 - EASY TO CHANGE -->
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80" 
+                         alt="Wine pairing" 
+                         class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Wine & Dine</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Image 6 - EASY TO CHANGE -->
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="250">
+                    <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=600&q=80" 
+                         alt="Fresh ingredients" 
+                         class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Farm Fresh Ingredients</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Testimonials</span>
+                <h2 class="section-title">What Guests Say</h2>
+            </div>
+            
+            <div class="reviews-slider">
+                <div class="review-track" id="reviewTrack">
+                    <!-- Review Card 1 - EASY TO CHANGE -->
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">
+                            "Absolutely phenomenal! The Wagyu Ribeye was cooked to perfection, 
+                            and the ambiance was elegant yet comfortable. This is our new favorite 
+                            restaurant for special occasions."
+                        </p>
+                        <div class="review-author">
+                            <img src="https://i.pravatar.cc/100?img=1" 
+                                 alt="Customer" 
+                                 class="review-avatar">
+                            <div>
+                                <h4 class="reviewer-name">Sarah Mitchell</h4>
+                                <p class="reviewer-title">Food Enthusiast</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review Card 2 - EASY TO CHANGE -->
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">
+                            "Chef Alessandro's attention to detail is remarkable. Every dish 
+                            was beautifully presented and bursting with flavor. The service 
+                            was impeccable from start to finish."
+                        </p>
+                        <div class="review-author">
+                            <img src="https://i.pravatar.cc/100?img=12" 
+                                 alt="Customer" 
+                                 class="review-avatar">
+                            <div>
+                                <h4 class="reviewer-name">David Chen</h4>
+                                <p class="reviewer-title">Business Executive</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review Card 3 - EASY TO CHANGE -->
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">
+                            "The Mediterranean Harvest salad exceeded all expectations. Fresh, 
+                            vibrant, and perfectly balanced. The wine pairing recommendations 
+                            were spot on. Will definitely return!"
+                        </p>
+                        <div class="review-author">
+                            <img src="https://i.pravatar.cc/100?img=5" 
+                                 alt="Customer" 
+                                 class="review-avatar">
+                            <div>
+                                <h4 class="reviewer-name">Emma Rodriguez</h4>
+                                <p class="reviewer-title">Travel Blogger</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-controls">
+                    <button class="review-btn review-prev" id="reviewPrev">←</button>
+                    <button class="review-btn review-next" id="reviewNext">→</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Reservation Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right">
+                <span class="section-badge">Get in Touch</span>
+                <h2 class="section-title">Reserve Your Table</h2>
+                <p class="contact-text">
+                    Join us for an unforgettable dining experience. Book your table today 
+                    or reach out for private events and catering services.
+                </p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>123 Gourmet Avenue<br>Downtown District, NY 10014</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div>
+                            <h4>Opening Hours</h4>
+                            <p>Monday - Friday: 11:00 AM - 10:00 PM<br>
+                               Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form-wrapper" data-aos="fade-left">
+                <form class="reservation-form" id="reservationForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" 
+                               id="name" 
+                               name="name" 
+                               placeholder="John Doe" 
+                               required>
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" 
+                               id="phone" 
+                               name="phone" 
+                               placeholder="+1 (555) 123-4567" 
+                               required>
+                        <span class="error-message" id="phoneError"></span>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date *</label>
+                            <input type="date" 
+                                   id="date" 
+                                   name="date" 
+                                   required>
+                            <span class="error-message" id="dateError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="time">Time *</label>
+                            <select id="time" name="time" required>
+                                <option value="">Select time</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                            </select>
+                            <span class="error-message" id="timeError"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="guests">Number of Guests *</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Select guests</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5">5 People</option>
+                            <option value="6">6+ People</option>
+                        </select>
+                        <span class="error-message" id="guestsError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Special Requests (Optional)</label>
+                        <textarea id="message" 
+                                  name="message" 
+                                  rows="4" 
+                                  placeholder="Any dietary restrictions or special occasions?"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Confirm Reservation
+                    </button>
+                    
+                    <div class="form-success" id="formSuccess">
+                        ✓ Reservation request submitted! We'll contact you shortly.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <span class="logo-text">Savoria</span>
+                    <span class="logo-subtitle">Fine Dining</span>
+                </div>
+                <p class="footer-description">
+                    Experience culinary excellence in every bite. Where passion meets flavor.
+                </p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#menu">Our Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#chef">Meet Our Chefs</a></li>
+                    <li><a href="#contact">Reservations</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4 class="footer-title">Contact Info</h4>
+                <ul class="footer-info">
+                    <li>📍 123 Gourmet Avenue, NY 10014</li>
+                    <li>📞 +1 (555) 123-4567</li>
+                    <li>✉️ hello@savoria.com</li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4 class="footer-title">Opening Hours</h4>
+                <ul class="footer-info">
+                    <li>Monday - Friday<br><strong>11:00 AM - 10:00 PM</strong></li>
+                    <li>Saturday - Sunday<br><strong>10:00 AM - 11:00 PM</strong></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Savoria Fine Dining. All rights reserved.</p>
+            <p>Designed with passion for culinary excellence</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
